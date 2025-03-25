@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <!-- App Logo and Title -->
+    <ImageView
+        android:layout_width="161dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:contentDescription="App Logo"
+        android:src="@drawable/votenow_logo" />
+
+    <!-- Face Authentication Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Face Authentication"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- Face Icon -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_face_auth"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Face Authentication"/>
+
+    <!-- Instruction Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please position your face within the frame to verify your identity."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- Verify Identity Button -->
+    <Button
+        android:id="@+id/btnVerifyIdentity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Identity"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+
+</LinearLayout>

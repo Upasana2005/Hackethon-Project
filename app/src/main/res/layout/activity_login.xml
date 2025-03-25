@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="138dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/votenow_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Aadhar Number"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/aadharEditText"
+        android:layout_width="386dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:hint="1234-5678-9123"
+        android:inputType="number"
+        android:maxLength="12" />
+
+    <Button
+        android:id="@+id/requestOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request OTP"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="378dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter OTP here"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <Button
+        android:id="@+id/verifyOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
